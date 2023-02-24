@@ -4,6 +4,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
 import java.awt.FlowLayout;
@@ -12,6 +13,7 @@ import javax.swing.JButton;
 
 public class GUI extends JFrame {
 
+	private JFrame testFrame;
 	private JPanel contentPane;
 	private JTextField textFieldID;
 	private JTextField textFieldFirstName;
@@ -23,13 +25,12 @@ public class GUI extends JFrame {
 	 * Create the frame.
 	 */
 	public GUI() {
+		testFrame = new JFrame();
+		testFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		testFrame.setBounds(100, 100, 726, 399);
 
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 726, 399);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-
-		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
 		textFieldID = new JTextField();
@@ -92,6 +93,15 @@ public class GUI extends JFrame {
 		JButton btnAllPrimaryKeys = new JButton("All Primary Keys");
 		btnAllPrimaryKeys.setBounds(597, 331, 109, 21);
 		contentPane.add(btnAllPrimaryKeys);
+
+		JScrollPane scrollPane = new JScrollPane(contentPane);
+		scrollPane.setBounds(0, 0, 710, 360);
+		scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+		scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+
+		testFrame.getContentPane().add(scrollPane);
+
+		testFrame.setVisible(true);
 
 	}
 
