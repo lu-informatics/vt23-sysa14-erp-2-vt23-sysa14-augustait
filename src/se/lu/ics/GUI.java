@@ -10,6 +10,8 @@ import javax.swing.JTextField;
 import java.awt.FlowLayout;
 import javax.swing.JTextPane;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class GUI extends JFrame {
 
@@ -20,6 +22,8 @@ public class GUI extends JFrame {
 	private JTextField textFieldLastName;
 	private JTextField textFieldJobTitle;
 	private JTextField textFieldCity;
+	private JTextPane textPane;
+	private JButton btnNamesOfAllColumns;
 
 	/**
 	 * Create the frame.
@@ -93,6 +97,8 @@ public class GUI extends JFrame {
 		JButton btnAllPrimaryKeys = new JButton("All Primary Keys");
 		btnAllPrimaryKeys.setBounds(597, 331, 109, 21);
 		contentPane.add(btnAllPrimaryKeys);
+		
+		
 
 		JScrollPane scrollPane = new JScrollPane(contentPane);
 		scrollPane.setBounds(0, 0, 710, 360);
@@ -104,5 +110,71 @@ public class GUI extends JFrame {
 		testFrame.setVisible(true);
 
 	}
+
+	public JPanel getContentPane() {
+		return contentPane;
+	}
+
+	public void setContentPane(JPanel contentPane) {
+		this.contentPane = contentPane;
+	}
+
+	public JTextField getTextFieldID() {
+		return textFieldID;
+	}
+
+	public void setTextFieldID(JTextField textFieldID) {
+		this.textFieldID = textFieldID;
+	}
+
+	public JTextField getTextFieldFirstName() {
+		return textFieldFirstName;
+	}
+
+	public void setTextFieldFirstName(JTextField textFieldFirstName) {
+		this.textFieldFirstName = textFieldFirstName;
+	}
+
+	public JTextField getTextFieldLastName() {
+		return textFieldLastName;
+	}
+
+	public void setTextFieldLastName(JTextField textFieldLastName) {
+		this.textFieldLastName = textFieldLastName;
+	}
+
+	public JTextField getTextFieldJobTitle() {
+		return textFieldJobTitle;
+	}
+
+	public void setTextFieldJobTitle(JTextField textFieldJobTitle) {
+		this.textFieldJobTitle = textFieldJobTitle;
+	}
+
+	public JTextField getTextFieldCity() {
+		return textFieldCity;
+	}
+
+	public void setTextFieldCity(JTextField textFieldCity) {
+		this.textFieldCity = textFieldCity;
+	}
+
+	public JTextPane getTextPane() {
+		return textPane;
+	}
+
+	public void setTextPane(JTextPane textPane) {
+		this.textPane = textPane;
+	}
+
+	public JButton getBtnNamesOfAllColumns() {
+		return btnNamesOfAllColumns;
+	}
+
+	public void setBtnNamesOfAllColumns(JButton btnNamesOfAllColumns) {
+		this.btnNamesOfAllColumns = btnNamesOfAllColumns;
+	}
+	
+	
 
 }
