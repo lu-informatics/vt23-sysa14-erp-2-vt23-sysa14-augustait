@@ -7,6 +7,7 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		GUI gui = new GUI();
+		gui.setVisible(true);
 		Controller c = new Controller(gui);
 	}
 
