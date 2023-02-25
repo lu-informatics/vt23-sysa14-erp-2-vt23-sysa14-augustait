@@ -24,6 +24,7 @@ public class GUI extends JFrame {
 	private JTextField textFieldCity;
 	private JTextPane textPane;
 	private JButton btnNamesOfAllColumns;
+	private JButton btnTotalNumberOfTables;
 
 	/**
 	 * Create the frame.
@@ -31,7 +32,7 @@ public class GUI extends JFrame {
 	public GUI() {
 		testFrame = new JFrame();
 		testFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		testFrame.setBounds(100, 100, 726, 399);
+		testFrame.setBounds(100, 100, 726, 431);
 
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -97,8 +98,6 @@ public class GUI extends JFrame {
 		JButton btnAllPrimaryKeys = new JButton("All Primary Keys");
 		btnAllPrimaryKeys.setBounds(597, 331, 109, 21);
 		contentPane.add(btnAllPrimaryKeys);
-		
-		
 
 		JScrollPane scrollPane = new JScrollPane(contentPane);
 		scrollPane.setBounds(0, 0, 710, 360);
@@ -174,7 +173,21 @@ public class GUI extends JFrame {
 	public void setBtnNamesOfAllColumns(JButton btnNamesOfAllColumns) {
 		this.btnNamesOfAllColumns = btnNamesOfAllColumns;
 	}
-	
-	
+
+	public JFrame getTestFrame() {
+		return testFrame;
+	}
+
+	public void setTestFrame(JFrame testFrame) {
+		this.testFrame = testFrame;
+	}
+
+	public JButton getBtnTotalNumberOfTables() {
+		return btnTotalNumberOfTables;
+	}
+
+	public void setBtnTotalNumberOfTables(JButton btnTotalNumberOfTables) {
+		this.btnTotalNumberOfTables = btnTotalNumberOfTables;
+	}
 
 }
