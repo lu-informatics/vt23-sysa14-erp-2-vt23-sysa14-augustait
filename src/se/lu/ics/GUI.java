@@ -12,6 +12,8 @@ import javax.swing.JTextPane;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Font;
+import javax.swing.JLabel;
 
 public class GUI extends JFrame {
 
@@ -45,6 +47,7 @@ public class GUI extends JFrame {
 		contentPane.setLayout(null);
 
 		textFieldID = new JTextField();
+		textFieldID.setFont(new Font("Sitka Display", Font.ITALIC, 10));
 		textFieldID.setBounds(20, 208, 96, 19);
 		contentPane.add(textFieldID);
 		textFieldID.setColumns(10);
@@ -106,6 +109,26 @@ public class GUI extends JFrame {
 		contentPane.add(btnAllPrimaryKeys);
 
 		JScrollPane scrollPane = new JScrollPane(contentPane);
+		
+		JLabel lblID = new JLabel("ID:");
+		lblID.setBounds(20, 195, 45, 13);
+		contentPane.add(lblID);
+		
+		JLabel lblFirstName = new JLabel("First Name:");
+		lblFirstName.setBounds(144, 195, 68, 13);
+		contentPane.add(lblFirstName);
+		
+		JLabel lblLastName = new JLabel("Last Name:");
+		lblLastName.setBounds(279, 195, 68, 13);
+		contentPane.add(lblLastName);
+		
+		JLabel lblJobTitle = new JLabel("Job Title:");
+		lblJobTitle.setBounds(426, 195, 45, 13);
+		contentPane.add(lblJobTitle);
+		
+		JLabel lblCity = new JLabel("City:");
+		lblCity.setBounds(579, 195, 45, 13);
+		contentPane.add(lblCity);
 		scrollPane.setBounds(0, 0, 710, 360);
 		scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
 		scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
@@ -243,5 +266,4 @@ public class GUI extends JFrame {
 	public void setBtnTotalNumberOfTables(JButton btnTotalNumberOfTables) {
 		this.btnTotalNumberOfTables = btnTotalNumberOfTables;
 	}
-
 }
