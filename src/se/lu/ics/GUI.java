@@ -75,7 +75,7 @@ public class GUI extends JFrame {
 		textPane = new JTextPane();
 		textPane.setBounds(25, 10, 760, 175);
 		contentPane.add(textPane);
-		
+
 		btnCreate = new JButton("Create");
 		btnCreate.setBounds(20, 237, 85, 21);
 		contentPane.add(btnCreate);
@@ -108,28 +108,28 @@ public class GUI extends JFrame {
 		btnAllPrimaryKeys.setBounds(690, 331, 134, 21);
 		contentPane.add(btnAllPrimaryKeys);
 
-		JScrollPane scrollPane = new JScrollPane(contentPane);
-		
 		JLabel lblID = new JLabel("ID:");
 		lblID.setBounds(20, 195, 45, 13);
 		contentPane.add(lblID);
-		
+
 		JLabel lblFirstName = new JLabel("First Name:");
 		lblFirstName.setBounds(172, 195, 133, 13);
 		contentPane.add(lblFirstName);
-		
+
 		JLabel lblLastName = new JLabel("Last Name:");
 		lblLastName.setBounds(342, 195, 68, 13);
 		contentPane.add(lblLastName);
-		
+
 		JLabel lblJobTitle = new JLabel("Job Title:");
 		lblJobTitle.setBounds(502, 195, 121, 13);
 		contentPane.add(lblJobTitle);
-		
+
 		JLabel lblCity = new JLabel("City:");
 		lblCity.setBounds(671, 195, 114, 13);
 		contentPane.add(lblCity);
-		scrollPane.setBounds(0, 0, 710, 360);
+
+		JScrollPane scrollPane = new JScrollPane(contentPane);
+		scrollPane.setBounds(0, 0, 857, 430);
 		scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
 		scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 
