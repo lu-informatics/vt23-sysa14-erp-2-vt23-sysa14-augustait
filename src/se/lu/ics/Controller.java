@@ -25,27 +25,78 @@ public class Controller {
 	
 	private void declareListener() {
 		
+		
+		
 		WebApplicationSoap webService = new WebApplicationSoapProxy();
 
+		
+		
 		gui.getBtnTotalNumberOfTables().addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				  try {
-	                    int tableCount = webService.getTableCount();
-	                    gui.getTextPane().setText("Total number of tables: " + tableCount);
-	                    System.out.println("btnTotalNumberOfTables: " + webService.getTableCount());
+				  
+				try {
+	                   
+					int tableCount = webService.getTableCount();
+	                    
+					gui.getTextPane().setText("Total number of tables: " + tableCount);
+	                   
+					System.out.println("btnTotalNumberOfTables: " + webService.getTableCount());
 	               
-				  } catch (RemoteException ex) {
-	                    ex.printStackTrace();
+				  
+				}catch (RemoteException ex) {
+	                    
+					ex.printStackTrace();
 	                    // handle the remote exception here
 	                }
+			}
+		});	 
+		
+		//CREATE
+		gui.getBtnCreate().addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
 				
 			}
-		});	  
+		});
+		
+		//FIND
+		gui.getBtnFind().addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		
+		gui.getBtnUpdate().addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		
+		
+		gui.getBtnDelete().addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		
+		
+		gui.getBtnNamesOfAllColumns().addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		
+		
+		gui.getBtnTotalNumberOfColumns().addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		
+		
+		gui.getBtnAllPrimaryKeys().addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		
+		
+		
 		
 	}
-	
-
-	
-	
-	
+		
 }
