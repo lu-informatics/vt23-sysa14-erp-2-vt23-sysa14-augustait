@@ -47,7 +47,7 @@ public class GUI extends JFrame {
 		contentPane.setLayout(null);
 
 		textFieldID = new JTextField();
-		textFieldID.setFont(new Font("Tahoma", Font.PLAIN, 10));
+		textFieldID.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		textFieldID.setBounds(20, 208, 121, 19);
 		contentPane.add(textFieldID);
 		textFieldID.setColumns(10);
