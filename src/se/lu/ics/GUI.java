@@ -40,42 +40,42 @@ public class GUI extends JFrame {
 	public GUI() {
 		testFrame = new JFrame();
 		testFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		testFrame.setBounds(100, 100, 726, 431);
+		testFrame.setBounds(100, 100, 857, 430);
 
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(null);
 
 		textFieldID = new JTextField();
-		textFieldID.setFont(new Font("Sitka Display", Font.ITALIC, 10));
-		textFieldID.setBounds(20, 208, 96, 19);
+		textFieldID.setFont(new Font("Tahoma", Font.PLAIN, 10));
+		textFieldID.setBounds(20, 208, 121, 19);
 		contentPane.add(textFieldID);
 		textFieldID.setColumns(10);
 
 		textFieldFirstName = new JTextField();
-		textFieldFirstName.setBounds(144, 208, 96, 19);
+		textFieldFirstName.setBounds(172, 208, 133, 19);
 		contentPane.add(textFieldFirstName);
 		textFieldFirstName.setColumns(10);
 
 		textFieldLastName = new JTextField();
-		textFieldLastName.setBounds(279, 208, 96, 19);
+		textFieldLastName.setBounds(342, 208, 121, 19);
 		contentPane.add(textFieldLastName);
 		textFieldLastName.setColumns(10);
 
 		textFieldJobTitle = new JTextField();
-		textFieldJobTitle.setBounds(426, 208, 96, 19);
+		textFieldJobTitle.setBounds(502, 208, 121, 19);
 		contentPane.add(textFieldJobTitle);
 		textFieldJobTitle.setColumns(10);
 
 		textFieldCity = new JTextField();
-		textFieldCity.setBounds(579, 208, 96, 19);
+		textFieldCity.setBounds(671, 208, 114, 19);
 		contentPane.add(textFieldCity);
 		textFieldCity.setColumns(10);
 
 		textPane = new JTextPane();
-		textPane.setBounds(25, 10, 676, 175);
+		textPane.setBounds(25, 10, 760, 175);
 		contentPane.add(textPane);
-
+		
 		btnCreate = new JButton("Create");
 		btnCreate.setBounds(20, 237, 85, 21);
 		contentPane.add(btnCreate);
@@ -93,19 +93,19 @@ public class GUI extends JFrame {
 		contentPane.add(btnDelete);
 
 		btnNamesOfAllColumns = new JButton("Names Of All Columns");
-		btnNamesOfAllColumns.setBounds(137, 331, 140, 21);
+		btnNamesOfAllColumns.setBounds(128, 331, 165, 21);
 		contentPane.add(btnNamesOfAllColumns);
 
 		btnTotalNumberOfTables = new JButton("Total Number Of Tables");
-		btnTotalNumberOfTables.setBounds(287, 331, 140, 21);
+		btnTotalNumberOfTables.setBounds(304, 331, 177, 21);
 		contentPane.add(btnTotalNumberOfTables);
 
 		btnTotalNumberOfColumns = new JButton("Total Number Of Columns");
-		btnTotalNumberOfColumns.setBounds(437, 331, 150, 21);
+		btnTotalNumberOfColumns.setBounds(491, 331, 189, 21);
 		contentPane.add(btnTotalNumberOfColumns);
 
 		btnAllPrimaryKeys = new JButton("All Primary Keys");
-		btnAllPrimaryKeys.setBounds(597, 331, 109, 21);
+		btnAllPrimaryKeys.setBounds(690, 331, 134, 21);
 		contentPane.add(btnAllPrimaryKeys);
 
 		JScrollPane scrollPane = new JScrollPane(contentPane);
@@ -115,19 +115,19 @@ public class GUI extends JFrame {
 		contentPane.add(lblID);
 		
 		JLabel lblFirstName = new JLabel("First Name:");
-		lblFirstName.setBounds(144, 195, 68, 13);
+		lblFirstName.setBounds(172, 195, 133, 13);
 		contentPane.add(lblFirstName);
 		
 		JLabel lblLastName = new JLabel("Last Name:");
-		lblLastName.setBounds(279, 195, 68, 13);
+		lblLastName.setBounds(342, 195, 68, 13);
 		contentPane.add(lblLastName);
 		
 		JLabel lblJobTitle = new JLabel("Job Title:");
-		lblJobTitle.setBounds(426, 195, 45, 13);
+		lblJobTitle.setBounds(502, 195, 121, 13);
 		contentPane.add(lblJobTitle);
 		
 		JLabel lblCity = new JLabel("City:");
-		lblCity.setBounds(579, 195, 45, 13);
+		lblCity.setBounds(671, 195, 114, 13);
 		contentPane.add(lblCity);
 		scrollPane.setBounds(0, 0, 710, 360);
 		scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
