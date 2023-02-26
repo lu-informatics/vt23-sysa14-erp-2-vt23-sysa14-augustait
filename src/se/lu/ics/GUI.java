@@ -25,6 +25,12 @@ public class GUI extends JFrame {
 	private JTextPane textPane;
 	private JButton btnNamesOfAllColumns;
 	private JButton btnTotalNumberOfTables;
+	private JButton btnCreate;
+	private JButton btnFind;
+	private JButton btnUpdate;
+	private JButton btnDelete;
+	private JButton btnTotalNumberOfColumns;
+	private JButton btnAllPrimaryKeys;
 
 	/**
 	 * Create the frame.
@@ -63,39 +69,39 @@ public class GUI extends JFrame {
 		contentPane.add(textFieldCity);
 		textFieldCity.setColumns(10);
 
-		JTextPane textPane = new JTextPane();
+		textPane = new JTextPane();
 		textPane.setBounds(25, 10, 676, 175);
 		contentPane.add(textPane);
 
-		JButton btnCreate = new JButton("Create");
+		btnCreate = new JButton("Create");
 		btnCreate.setBounds(20, 237, 85, 21);
 		contentPane.add(btnCreate);
 
-		JButton btnFind = new JButton("Find");
+		btnFind = new JButton("Find");
 		btnFind.setBounds(20, 268, 85, 21);
 		contentPane.add(btnFind);
 
-		JButton btnUpdate = new JButton("Update");
+		btnUpdate = new JButton("Update");
 		btnUpdate.setBounds(20, 299, 85, 21);
 		contentPane.add(btnUpdate);
 
-		JButton btnDelete = new JButton("Delete");
+		btnDelete = new JButton("Delete");
 		btnDelete.setBounds(20, 331, 85, 21);
 		contentPane.add(btnDelete);
 
-		JButton btnNamesOfAllColumns = new JButton("Names Of All Columns");
+		btnNamesOfAllColumns = new JButton("Names Of All Columns");
 		btnNamesOfAllColumns.setBounds(137, 331, 140, 21);
 		contentPane.add(btnNamesOfAllColumns);
 
-		JButton btnTotalNumberOfTables = new JButton("Total Number Of Tables");
+		btnTotalNumberOfTables = new JButton("Total Number Of Tables");
 		btnTotalNumberOfTables.setBounds(287, 331, 140, 21);
 		contentPane.add(btnTotalNumberOfTables);
 
-		JButton btnTotalNumberOfColumns = new JButton("Total Number Of Columns");
+		btnTotalNumberOfColumns = new JButton("Total Number Of Columns");
 		btnTotalNumberOfColumns.setBounds(437, 331, 150, 21);
 		contentPane.add(btnTotalNumberOfColumns);
 
-		JButton btnAllPrimaryKeys = new JButton("All Primary Keys");
+		btnAllPrimaryKeys = new JButton("All Primary Keys");
 		btnAllPrimaryKeys.setBounds(597, 331, 109, 21);
 		contentPane.add(btnAllPrimaryKeys);
 
@@ -108,6 +114,54 @@ public class GUI extends JFrame {
 
 		testFrame.setVisible(true);
 
+	}
+
+	public JButton getBtnCreate() {
+		return btnCreate;
+	}
+
+	public void setBtnCreate(JButton btnCreate) {
+		this.btnCreate = btnCreate;
+	}
+
+	public JButton getBtnFind() {
+		return btnFind;
+	}
+
+	public void setBtnFind(JButton btnFind) {
+		this.btnFind = btnFind;
+	}
+
+	public JButton getBtnUpdate() {
+		return btnUpdate;
+	}
+
+	public void setBtnUpdate(JButton btnUpdate) {
+		this.btnUpdate = btnUpdate;
+	}
+
+	public JButton getBtnDelete() {
+		return btnDelete;
+	}
+
+	public void setBtnDelete(JButton btnDelete) {
+		this.btnDelete = btnDelete;
+	}
+
+	public JButton getBtnTotalNumberOfColumns() {
+		return btnTotalNumberOfColumns;
+	}
+
+	public void setBtnTotalNumberOfColumns(JButton btnTotalNumberOfColumns) {
+		this.btnTotalNumberOfColumns = btnTotalNumberOfColumns;
+	}
+
+	public JButton getBtnAllPrimaryKeys() {
+		return btnAllPrimaryKeys;
+	}
+
+	public void setBtnAllPrimaryKeys(JButton btnAllPrimaryKeys) {
+		this.btnAllPrimaryKeys = btnAllPrimaryKeys;
 	}
 
 	public JPanel getContentPane() {
