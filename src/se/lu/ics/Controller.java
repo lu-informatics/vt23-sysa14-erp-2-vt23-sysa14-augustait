@@ -9,7 +9,6 @@ import javax.swing.JButton;
 public class Controller {
 	
 	private GUI gui;
-	private WebApplicationSoapProxy webService = new WebApplicationSoapProxy();
 
 	public GUI getGui() {
 		return gui;
@@ -26,28 +25,24 @@ public class Controller {
 	
 	private void declareListener() {
 		
-		
-		
-		
-	    JButton btnTotalNumberOfTables = gui.getBtnTotalNumberOfTables();
-	    if (gui.getBtnTotalNumberOfTables() != null) {
-	        gui.getBtnTotalNumberOfTables().addActionListener(new ActionListener() {
-	            public void actionPerformed(ActionEvent e) {
-	                try {
+		WebApplicationSoap webService = new WebApplicationSoapProxy();
+
+		gui.getBtnTotalNumberOfTables().addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				  try {
 	                    int tableCount = webService.getTableCount();
 	                    gui.getTextPane().setText("Total number of tables: " + tableCount);
 	                    System.out.println("btnTotalNumberOfTables: " + webService.getTableCount());
-	                } catch (RemoteException ex) {
+	               
+				  } catch (RemoteException ex) {
 	                    ex.printStackTrace();
 	                    // handle the remote exception here
 	                }
-	            }
-	        });
-	    } else {
-	        System.err.println("Button not found in GUI layout.");
-	    }
+				
+			}
+		});	  
+		
 	}
-	
 	
 
 	
